@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <script>
+    <!-- <script>
         var Tc = prompt("Укажите температуру в °С");
         var Tf = (9 / 5) * Tc + 32;
         alert('В °F это будет ' + Tf);
@@ -22,7 +22,97 @@
     <script>
         var js = 1000 + "108";
         alert(js);
+    </script> -->
+    <script class="1">
+        var a = 1, b = 1, c, d;
+        c = ++a; alert(c);            // 2 потому что преинкримент увеличивает значение на 1, было 1 стало 2
+        d = b++; alert(d);            // 1 потому что постинкримент увеличивает значение на 1, но сразу не выводит, после использывание значение не изменно
+        c = (2 + ++a); alert(c);      // 5 потому что с а была 2 и стала 3 и + 2
+        d = (2 + b++); alert(d);      // 4 потому что b не успела стать 3, а осталась 2 и + 2
+        alert(a);                     // 3 потому что в 3 пимере оно стало 3 
+        alert(b);                     // 3 потому что при последующем выводе постинкримент сделал а 3
     </script>
+    <script class="2">
+        var a = 2;
+        var x = 1 + (a *= 2);                 // x = 5
+    </script>
+    <script class="3">
+        var f = 6;
+        var g = 8;
+        if (f >= 0 && g >= 0) alert(f - g);
+        else if (f < 0 && g < 0) alert(f * g);
+        else alert(f + g);
+    </script>
+    <script class="4">
+        var h = prompt("Введите число от 0 до 15");
+        if (!isNaN(h)) {
+            switch (h) {
+                case 1:
+                    alert(h++);
+                case 2:
+                    alert(h++);
+                case 3:
+                    alert(h++);
+                case 4:
+                    alert(h++);
+                case 5:
+                    alert(h++);
+                case 6:
+                    alert(h++);
+                case 7:
+                    alert(h++);
+                case 8:
+                    alert(h++);
+                case 9:
+                    alert(h++);
+                case 10:
+                    alert(h++);
+                case 11:
+                    alert(h++);
+                case 12:
+                    alert(h++);
+                case 13:
+                    alert(h++);
+                case 14:
+                    alert(h++);
+                case 15:
+                    alert(h);
+                    break;
+            }
+        } else alert("ввели не число от 0 до 15")
+    </script>
+    <script class="5">
+        function mul(arg1, arg2) {
+            return arg1 * arg2;
+        }
+        function div(arg1, arg2) {
+            return arg1 / arg2;
+        }
+        function plu(arg1, arg2) {
+            return arg1 + arg2;
+        }
+        function min(arg1, arg2) {
+            return arg1 - arg2;
+        }
+    </script>
+    <script class="6">
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "mul":
+                    return mul(arg1, arg2);
+                case "div":
+                    return div(arg1, arg2);
+                case "plu":
+                    return plu(arg1, arg2);
+                case "min":
+                    return min(arg1, arg2);
+            }
+        }
+    </script>
+    <!-- задание 7 -->
+    <!--  Nul !== 0, Nul <= 0, Nul>= 0 (true)
+         Nul === 0, Nul == 0, Nul > 0, Nul < 0 (false)  -->
+
 </body>
 
 </html>
