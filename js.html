@@ -3,60 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
 
 <body>
-    <script class="task_1">
-
-        var a = 2;
-        var numb = [];
-
-        while (a < 100) {
-
-            var b = true;
-            var i = 2;
-
-            while (i < a) {
-                if (a % i === 0) {
-                    b = false;
-                }
-                i++
-            }
-            if (b === true) {
-                numb.push(a);
-            }
-            a++
-        }
-        console.log(numb);
-
-    </script>
-
-    <script class="task_2,3">
-
-        var basket = [39, 59, 100, 4];
-
-        function countBasketPrice() {
-            var basketSum = 0;
-
-            for (var sum = 0; sum < basket.length; sum++) {
-                basketSum += basket[sum];
-            }
-            return basketSum;
-        }
-        console.log(countBasketPrice());
-
-    </script>
-
-    <script class="task_5">
-
-        for (var i = 0; i < 10; i++) {
-            console.log(Array(i * 2 + 1).fill('*').join(' '));
-        }
-
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
